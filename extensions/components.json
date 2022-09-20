@@ -1,0 +1,51 @@
+[
+  {
+    "name": "wikipedia",
+    "description": "",
+    "configured": true,
+    "group": "Knowledge",
+    "inputs": [
+      {
+        "id": "search",
+        "label": "search",
+        "service": "search",
+        "to": "search_output"
+      },
+      {
+        "id": "summary",
+        "label": "summary",
+        "service": "summary",
+        "to": "summary_output"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "search_output",
+        "label": "search_output"
+      },
+      {
+        "id": "summary_output",
+        "label": "summary_output"
+      }
+    ],
+    "options": {
+      "group": "Knowledge",
+      "icon": "RiTyphoonFill",
+      "click": null,
+      "values": {
+        "num_sentences": 1
+      },
+      "args": [
+        {
+          "name": "num_sentences",
+          "type": "number",
+          "label": "num_sentences",
+          "helper": "",
+          "group": "",
+          "value": 1,
+          "description": ""
+        }
+      ]
+    }
+  }
+]

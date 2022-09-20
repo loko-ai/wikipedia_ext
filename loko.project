@@ -1,0 +1,337 @@
+{
+  "name": "wikipedia_ext",
+  "id": "wikipedia_ext",
+  "description": "",
+  "created_on": "20/09/2022, 13:37:02",
+  "last_modify": "20/09/2022, 14:01:00",
+  "graphs": {
+    "main": {
+      "nodes": [
+        {
+          "id": "7079f071-cc92-46a9-94a1-9342fc5f86c3",
+          "position": {
+            "x": 570,
+            "y": 91
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Search",
+                "debug": false,
+                "type": "String",
+                "value": "Live Tech"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 570,
+            "y": 91
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "a0062ddb-a825-4c5b-bc07-d1144f74c1eb",
+          "position": {
+            "x": 568,
+            "y": 249
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "Summary",
+                "debug": false,
+                "type": "String",
+                "value": "Artificial Intelligence"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 568,
+            "y": 249
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "459c17c1-1bc6-4510-a93b-eab200c59b35",
+          "position": {
+            "x": 789,
+            "y": 197
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "wikipedia",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "search",
+                "label": "search",
+                "service": "search",
+                "to": "search_output"
+              },
+              {
+                "id": "summary",
+                "label": "summary",
+                "service": "summary",
+                "to": "summary_output"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "search_output",
+                "label": "search_output"
+              },
+              {
+                "id": "summary_output",
+                "label": "summary_output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": null,
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "num_sentences",
+                  "type": "number",
+                  "label": "num_sentences",
+                  "helper": "",
+                  "group": "",
+                  "value": 1,
+                  "description": ""
+                }
+              ],
+              "click": null,
+              "icon": null,
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "num_sentences": "3"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 789,
+            "y": 197
+          },
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-a0062ddb-a825-4c5b-bc07-d1144f74c1eboutput-459c17c1-1bc6-4510-a93b-eab200c59b35summary",
+          "source": "a0062ddb-a825-4c5b-bc07-d1144f74c1eb",
+          "sourceHandle": "output",
+          "target": "459c17c1-1bc6-4510-a93b-eab200c59b35",
+          "targetHandle": "summary",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-7079f071-cc92-46a9-94a1-9342fc5f86c3output-459c17c1-1bc6-4510-a93b-eab200c59b35search",
+          "source": "7079f071-cc92-46a9-94a1-9342fc5f86c3",
+          "sourceHandle": "output",
+          "target": "459c17c1-1bc6-4510-a93b-eab200c59b35",
+          "targetHandle": "search",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    }
+  },
+  "open": [
+    "main"
+  ],
+  "active": "main",
+  "version": "1.0.0",
+  "__class__": "Project"
+}
