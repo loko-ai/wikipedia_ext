@@ -15,7 +15,7 @@ In order to start the project remember to press the **play** button on the right
 You'll find the Wikipedia extension on the bottom of blocks' list. The extension has 2 inputs and 2 outputs. 
 The first one implements the *search* of Wikipedia pages, while the second one return a *summary* of a given topic.
 
-Let's now see how to custom the extension. 
+Let's now see how to custom the extension (See more here <a href="https://github.com/loko-ai/loko/wiki/Custom-extensions">Custom extensions</a>).
 
 Click right on the project's name on *Open in editor* (configure your editor using the Loko's settings first):
 <p align="center"><img src="https://user-images.githubusercontent.com/30443495/229053415-a38b930c-9da3-4d28-beb8-87b882e620b9.png" width="80%" /></p>
@@ -40,7 +40,7 @@ save_extensions([wiki])
 ```
 
 We are defining all the block's information: *inputs*, *outputs*, *args*. When you run the script, the component will be 
-saved as a json into `/wikipedia_ext/services/services.py` and showed in your block's list. 
+saved as a json into `/wikipedia_ext/extensions/components.json` and showed in your block's list. 
 See more here https://loko-extensions.readthedocs.io/en/latest/.
 
 The input **search** is linked to the service `/search`, while the input **summary** is linked to the service `/summary`:
